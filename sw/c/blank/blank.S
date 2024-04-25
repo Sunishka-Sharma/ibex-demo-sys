@@ -14,12 +14,12 @@ blank_loop:
   .section .vectors, "ax"
   .option norvc;
 
-  // All unimplemented interrupts/exceptions go to the default_exc_handler.
+  # All unimplemented interrupts/exceptions go to the default_exc_handler.
   .org 0x00
   .rept 32
   jal x0, blank_loop
   .endr
 
-  // reset vector
+  # reset vector
   .org 0x80
   jal x0, blank_loop
