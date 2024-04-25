@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0, see LICENSE for details.
 // SPDX-License-Identifier: Apache-2.0
 
-#include "core/lucida_console_10pt.h"
+#include "lucida_console_10pt.h"
 #include "demo_system.h"
 #include "fractal.h"
 #include "gpio.h"
