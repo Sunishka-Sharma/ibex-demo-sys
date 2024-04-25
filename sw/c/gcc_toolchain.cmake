@@ -6,7 +6,8 @@ set(CMAKE_SYSTEM_PROCESSOR riscv)
 set(CMAKE_C_COMPILER /opt/homebrew/opt/riscv-gnu-toolchain/bin/riscv64-unknown-elf-gcc)
 set(CMAKE_CXX_COMPILER /opt/homebrew/opt/riscv-gnu-toolchain/bin/riscv64-unknown-elf-g++)
 set(CMAKE_ASM_COMPILER /opt/homebrew/opt/riscv-gnu-toolchain/bin/riscv64-unknown-elf-as)
-
+set(CMAKE_C_FLAGS_INIT "-march=rv32imfc -mabi=ilp32f")
+set(CMAKE_ASM_FLAGS_INIT "-march=rv32imfc -mabi=ilp32f")
 # Compiler Flags
 set(CMAKE_C_FLAGS "-march=rv32imac_zicsr_zifencei -mabi=ilp32")
 
